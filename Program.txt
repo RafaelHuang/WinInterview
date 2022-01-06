@@ -1,0 +1,20 @@
+Q5:
+int main(){
+	int num_list[300];
+	int tmp;
+	int k;
+	for(i=1; i++){
+		scanf("%d", &num_list[i]);
+		k++;
+	}
+	
+	for(i=1; i<k; i++){
+		for(j=0; j<i; j++){
+			if(num_list[j] > num_list[j+1]){
+				tmp = num_list[j];
+				num_list[j] = num_list[j+1];
+				num_list[j+1] = tmp;
+			}
+		}
+	}
+}
