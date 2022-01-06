@@ -1,0 +1,17 @@
+Q1：
+SELECT firstName, lastName, city, state
+FROM Person as P, Address as A
+WHERE P.personID = A.personID;
+
+Q2：
+SELECT name
+FROM Customer
+WHERE id NOT IN(SELECT customerID 
+				FROM Orders;)
+				
+Q3：
+SELECT email
+FROM Person
+WHERE email NOT IN(SELECT DISTINCT email 
+				   FROM email;)
+				
